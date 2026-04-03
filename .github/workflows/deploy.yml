@@ -25,5 +25,5 @@ jobs:
           aws-session-token: ${{ secrets.AWS_SESSION_TOKEN }}
           aws-region: us-east-1
           
-      - name: Verify connection (ทดสอบว่าล็อกอินสำเร็จไหม)
+      - name: Verify connection
         run: aws sts get-caller-identity
